@@ -1,8 +1,8 @@
 
-export const Header = ({ title, logosrc }) =>{
+export const Header = ({ text, logosrc }) =>{
     return(
         <header logosrc={ logosrc }>
-            <a href="#">{ title }</a>
+            <a href="#">{ text }</a>
             <img src={ logosrc } alt="logo" />
         </header>
     );

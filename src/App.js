@@ -9,12 +9,13 @@ import reactLogo from '../src/logo.svg';
 function App() {
   return (
     <div className="app">
-      < Header title="Header" logosrc={reactLogo} />
+      < Header text="Header" logosrc={reactLogo} />
       <div className='wrapper'>
-        < Sidebar />
-        < Content />
+        < Content >          
+        </Content >
+        < Sidebar text="Sidebar" />
       </div>
-      < Footer />
+      < Footer text="Footer" />
     </div>
   );
 }

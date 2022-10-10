@@ -1,7 +1,9 @@
+import { People } from '../data/People'
+
 export const Content = () =>{
     return(
         <main>
-            Content
+            < People />
         </main>
     );
 }

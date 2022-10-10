@@ -2,14 +2,14 @@
 
 ## Zadanie 1:
 
-1. w folderze `src/components` utwórz niezależne komponenty:
+<!-- 1. w folderze `src/components` utwórz niezależne komponenty:
 
 - `Header` - obsługujący parametr `title` oraz `logoSrc`
 - `Sidebar`- obsługujący parametr `menuItems`
 - `Content` - obsługujący parametr `text`
-- `Footer` - obsługujący parametr `text`
+- `Footer` - obsługujący parametr `text` -->
 
-2. zaimportuj utworzone komponenty do głównego komponentu aplikacji (`App.js`) i rozmieść według schematu:
+<!-- 2. zaimportuj utworzone komponenty do głównego komponentu aplikacji (`App.js`) i rozmieść według schematu:
 
 ```
  ______________________
@@ -29,9 +29,9 @@
 |        Footer        |
 |______________________|
 
-```
+``` -->
 
-## Zadanie 2:
+<!-- ## Zadanie 2:
 
 - utwórz komponent `People` oraz `Person`, który wyświetli listę osób - lista osób powinna zostać zdefiniowana w folderze `src/data` i importowana w głównym komponencie aplikacji (`App`) a następnie przekazywana do komponent `People`
 
@@ -129,7 +129,7 @@
       bs: "transition cutting-edge web services",
     },
   },
-];
+]; -->
 ```
 
 ## Zadanie 3

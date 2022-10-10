@@ -1,7 +1,7 @@
-export const Footer = () =>{
+export const Footer = ({ text }) =>{
     return(
         <footer>
-            Footer
+            { text }
         </footer>
     );
 }

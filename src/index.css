@@ -25,8 +25,8 @@ header{
   display: flex;
   justify-content: flex-end;
   text-align: center;
-  background: #333;
-  color: white;
+  background: #000;
+  color: lightblue;
 }
 
 header a{
@@ -38,7 +38,7 @@ header a{
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: lightblue;
 }
 
 header img{
@@ -52,17 +52,38 @@ header img{
 }
 
 .wrapper nav{
-  flex-grow: 1;
-  background: #555;
-  border-right: 1px solid #444;
+  flex-grow: 2;
+  background: #333;
+  
 }
 
 .wrapper main{
-  background: #555;
-  flex-grow: 2;
+  background: #222;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.users{
+  min-width: 100%;
+  color: lightblue;
+}
+
+.user{
+  padding: 5px;
+}
+
+.users h1{
+  padding: 0;
+  margin: 0;
+  background-color: #555;
+  margin-bottom: 10px;
 }
 
 footer{
-  background: #333;
-  color: white;
+  background: #000;
+  color: lightblue;
+  padding: 5px;
 }

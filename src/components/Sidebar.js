@@ -1,7 +1,7 @@
-export const Sidebar = () =>{
+export const Sidebar = ({ text }) =>{
     return(
         <nav>
-            Sidebar
+            { text }
         </nav>
     );
 }
