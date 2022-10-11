@@ -9,12 +9,12 @@ import React, { useState } from 'react';
 
 const theme={
   colorsLight:{
-    headerFooterBackground: 'white',
+    headerFooterBackground: '#FAEBD7',
     textMain: 'black',
-    mainBackground: 'lightgray',
+    mainBackground: '#f4eee7',
     text: 'black',
-    navBackground: 'gray',
-    h1Background: 'antiquewhite',
+    navBackground: 'white',
+    h1Background: '#f4eee7',
   },
   colorsDark:{
     headerFooterBackground: '#111',
@@ -22,7 +22,7 @@ const theme={
     mainBackground: '#222',
     text: 'lightblue',
     navBackground: '#333',
-    h1Background: '#555',
+    h1Background: '#222',
   },
 }
 
