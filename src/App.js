@@ -1,14 +1,34 @@
-import './App.css';
+import { ThemeProvider } from 'styled-components';
 import { Header } from './components/Header';
 import { Content } from './components/Content';
 import { Sidebar } from './components/Sidebar';
 import { Footer } from './components/Footer';
 import reactLogo from '../src/logo.svg';
+import {GlobalStyles} from './components/styles/Global'
 
+const theme={
+  colorsLight:{
+    headerFooterBackground: '',
+    textMain: '',
+    text: '',
+    spanBackground: '',
+    h1Background: '',
+  },
+  colorsDark:{
+    headerFooterBackground: '',
+    textMain: '',
+    text: '',
+    spanBackground: '',
+    h1Background: '',
+  },
+}
 
 function App() {
   return (
-    <div className="app">
+    <ThemeProvider theme={theme}>
+      <>
+      < GlobalStyles />
+      <div className="app">
       < Header text="Deleting users from list - The Website" logosrc={reactLogo} />
       <div className='wrapper'>
         < Content >          
@@ -17,6 +37,8 @@ function App() {
       </div>
       < Footer text="Footer" />
     </div>
+    </>
+    </ThemeProvider>
   );
 }
 

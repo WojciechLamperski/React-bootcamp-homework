@@ -1,8 +1,10 @@
+import { StyledSidebar } from "./styles/Sidebar.styled";
+
 export const Sidebar = ({ text }) =>{
     return(
-        <nav>
+        <StyledSidebar>
             { text }
             <buttton></buttton>
-        </nav>
+        </StyledSidebar>
     );
 }

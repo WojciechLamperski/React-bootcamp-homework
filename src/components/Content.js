@@ -1,9 +1,10 @@
-import { People } from '../data/People'
+import { People } from '../data/People';
+import { StyledContent } from './styles/Content.styled';
 
 export const Content = () =>{
     return(
-        <main>
+        <StyledContent>
             < People />
-        </main>
+        </StyledContent>
     );
 }
