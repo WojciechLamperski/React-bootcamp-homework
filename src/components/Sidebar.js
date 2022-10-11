@@ -1,10 +1,10 @@
 import { StyledSidebar } from "./styles/Sidebar.styled";
 
-export const Sidebar = ({ text, onClick, darkMode }) =>{
+export const Sidebar = ({ text, buttonOnClick, darkMode }) =>{
     return(
-        <StyledSidebar onClick={onClick} darkMode={ darkMode }>
+        <StyledSidebar buttonOnClick ={ buttonOnClick } darkMode={ darkMode }>
             { text }
-            <button onClick={onClick}>Change dark/light mode</button>
+            <button onClick = { buttonOnClick } >Change dark/light mode</button>
         </StyledSidebar>
     );
 }

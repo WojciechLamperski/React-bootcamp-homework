@@ -40,6 +40,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <input type="text" placeholder='search'></input>
       <>
       < GlobalStyles />
       <div className="app">
@@ -47,7 +48,7 @@ function App() {
       <div className='wrapper'>
         < Content darkMode = { mode } >          
         </Content >
-        < Sidebar text="This website allows you to delete users from list, but you shouldn't do it someone put time and effort into placing them there, please show respect and don't input users name into that big input field below websites name BUT if you by any chance happen to do that calm down because its still not the end of the world ;) to delete the user you also have to click the DELETE button, so you can relax if you selected a user, as long as you do not click that big button that says DELETE we should all be able to be fine :) Ahh just grasp the beauty and harmony of this website with all the users intact :D" onClick={isDarkOrLightMode} darkMode = { mode } />
+        < Sidebar text="This website allows you to delete users from list, but you shouldn't do it someone put time and effort into placing them there, please show respect and don't input users name into that big input field below websites name BUT if you by any chance happen to do that calm down because its still not the end of the world ;) to delete the user you also have to click the DELETE button, so you can relax if you selected a user, as long as you do not click that big button that says DELETE we should all be able to be fine :) Ahh just grasp the beauty and harmony of this website with all the users intact :D" buttonOnClick={isDarkOrLightMode} darkMode = { mode } />
       </div>
       < Footer text="Footer" darkMode = { mode } />
     </div>
