@@ -6,8 +6,8 @@ export const StyledHeader = styled.header`
     display: flex;
     justify-content: flex-end;
     text-align: center;
-    background: #111;
-    color: lightblue;
+    background: ${ props => props.darkMode == true ? ({ theme }) => theme.colorsDark.headerFooterBackground : ({ theme }) => theme.colorsLight.headerFooterBackground}};
+    color: ${ props => props.darkMode == true ? ({ theme }) => theme.colorsDark.text : ({ theme }) => theme.colorsLight.text}};
     text-transform: uppercase;
   
   a {
@@ -19,7 +19,7 @@ export const StyledHeader = styled.header`
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: lightblue;
+    color: ${ props => props.darkMode == true ? ({ theme }) => theme.colorsDark.text : ({ theme }) => theme.colorsLight.text}};
   }
   
   img {

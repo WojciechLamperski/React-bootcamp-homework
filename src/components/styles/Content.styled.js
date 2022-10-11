@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContent = styled.main`
 
-    background: #222;
+    background: ${({ theme }) => theme.colorsDark.mainBackground};
     min-width: 33%;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ export const StyledContent = styled.main`
 
   .users{
     min-width: 100%;
-    color: lightblue;
+    color: ${({ theme }) => theme.colorsDark.text};
   }
   
   .user{
@@ -21,7 +21,7 @@ export const StyledContent = styled.main`
   .users h1{
     padding: 0;
     margin: 0;
-    background-color: #555;
+    background-color: ${({ theme }) => theme.colorsDark.h1Background};
     margin-bottom: 10px;
   }
 `
