@@ -13,8 +13,8 @@ const theme={
     textMain: 'black',
     mainBackground: 'lightgray',
     text: 'black',
-    navBackground: 'lightgray',
-    h1Background: 'lightgray',
+    navBackground: 'gray',
+    h1Background: 'antiquewhite',
   },
   colorsDark:{
     headerFooterBackground: '#111',
@@ -45,9 +45,9 @@ function App() {
       <div className="app">
       < Header text="Deleting users from list - The Website" logosrc = { reactLogo } darkMode = { mode } />
       <div className='wrapper'>
-        < Content >          
+        < Content darkMode = { mode } >          
         </Content >
-        < Sidebar text="This website allows you to delete users from list, but you shouldn't do it someone put time and effort into placing them there, please show respect and don't input users name into that big input field below websites name BUT if you by any chance happen to do that calm down because its still not the end of the world ;) to delete the user you also have to click the DELETE button, so you can relax if you selected a user, as long as you do not click that big button that says DELETE we should all be able to be fine :) Ahh just grasp the beauty and harmony of this website with all the users intact :D" onClick={isDarkOrLightMode} />
+        < Sidebar text="This website allows you to delete users from list, but you shouldn't do it someone put time and effort into placing them there, please show respect and don't input users name into that big input field below websites name BUT if you by any chance happen to do that calm down because its still not the end of the world ;) to delete the user you also have to click the DELETE button, so you can relax if you selected a user, as long as you do not click that big button that says DELETE we should all be able to be fine :) Ahh just grasp the beauty and harmony of this website with all the users intact :D" onClick={isDarkOrLightMode} darkMode = { mode } />
       </div>
       < Footer text="Footer" darkMode = { mode } />
     </div>
