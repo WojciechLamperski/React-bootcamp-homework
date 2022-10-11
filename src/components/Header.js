@@ -1,9 +1,10 @@
+import { StyledHeader } from "./styles/Header.styled";
 
 export const Header = ({ text, logosrc }) =>{
     return(
-        <header logosrc={ logosrc }>
+        <StyledHeader logosrc={ logosrc }>
             <a href="#">{ text }</a>
             <img src={ logosrc } alt="logo" />
-        </header>
+        </StyledHeader>
     );
 }
