@@ -1,8 +1,8 @@
 import { StyledFooter } from "./styles/Footer.styled";
 
-export const Footer = ({ text, darkMode }) =>{
+export const Footer = ({ text }) =>{
     return(
-        <StyledFooter darkMode = { darkMode } >
+        <StyledFooter>
             { text }
         </StyledFooter>
     );

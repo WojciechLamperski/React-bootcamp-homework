@@ -1,9 +1,9 @@
 import { People } from '../data/People';
 import { StyledContent } from './styles/Content.styled';
 
-export const Content = ({ darkMode }) =>{
+export const Content = () =>{
     return(
-        <StyledContent darkMode={ darkMode }>
+        <StyledContent>
             < People />
         </StyledContent>
     );

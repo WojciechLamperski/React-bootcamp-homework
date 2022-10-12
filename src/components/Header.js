@@ -1,8 +1,8 @@
 import { StyledHeader } from "./styles/Header.styled";
 
-export const Header = ({ text, logosrc, darkMode }) =>{
+export const Header = ({ text, logosrc }) =>{
     return(
-        <StyledHeader logosrc={ logosrc } darkMode={ darkMode }>
+        <StyledHeader logosrc={ logosrc }>
             <a href="#">{ text }</a>
             <img src={ logosrc } alt="logo" />
         </StyledHeader>

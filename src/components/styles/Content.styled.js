@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContent = styled.main`
 
-    background: ${ props => props.darkMode == true ? ({ theme }) => theme.colorsDark.mainBackground : ({ theme }) => theme.colorsLight.mainBackground}};
+    background: ${ ({ theme }) => theme.mainBackground };
     min-width: 33%;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@ export const StyledContent = styled.main`
   .users{
     min-width: 100%;
     margin: 0;
-    color: ${ props => props.darkMode == true ? ({ theme }) => theme.colorsDark.text : ({ theme }) => theme.colorsLight.text}};
+    color: ${ ({ theme }) => theme.text };
   }
   
   .user{
@@ -24,7 +24,7 @@ export const StyledContent = styled.main`
   .users h1{
     padding: 0;
     margin: 0;
-    background-color: ${ props => props.darkMode == true ? ({ theme }) => theme.colorsDark.h1Background : ({ theme }) => theme.colorsLight.h1Background}};
+    background-color: ${ ({ theme }) => theme.h1Background };
     margin-bottom: 10px;
   }
 `
